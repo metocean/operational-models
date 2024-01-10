@@ -110,7 +110,7 @@
             
         
             
-            <style> #map_5dbd881db618468697802c5efab0cd0b {
+            <style> #map_457a9b9809f94f91adb41d88ca8a30d3 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -126,7 +126,7 @@
             
         
             
-            <div class="folium-map" id="map_5dbd881db618468697802c5efab0cd0b" ></div>
+            <div class="folium-map" id="map_457a9b9809f94f91adb41d88ca8a30d3" ></div>
         
         
         
@@ -140,7 +140,7 @@
             var northEast = L.latLng(90, 360);
             var bounds = L.latLngBounds(southWest, northEast);
 
-            var map_5dbd881db618468697802c5efab0cd0b = L.map('map_5dbd881db618468697802c5efab0cd0b', {
+            var map_457a9b9809f94f91adb41d88ca8a30d3 = L.map('map_457a9b9809f94f91adb41d88ca8a30d3', {
                                            center:[0,0],
                                            zoom: 2,
                                            maxBounds: bounds,
@@ -151,7 +151,7 @@
         
         
             
-            var tile_layer_e128fdb3d4d943e390128c1b142f43c1 = L.tileLayer(
+            var tile_layer_5bea63e2eae04311b301916990e88661 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -159,51 +159,36 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_5dbd881db618468697802c5efab0cd0b);
+                ).addTo(map_457a9b9809f94f91adb41d88ca8a30d3);
 
         
         
             
-            var feature_group_a8041966ef9b44c3a88dfe75d3b508c3 = L.featureGroup(
-                ).addTo(map_5dbd881db618468697802c5efab0cd0b);
+            var feature_group_e1843666637f41d3a24b099d6400a163 = L.featureGroup(
+                ).addTo(map_457a9b9809f94f91adb41d88ca8a30d3);
         
         
             
-            var feature_group_47d00b98ab70416a80c7e40768a15648 = L.featureGroup(
-                ).addTo(map_5dbd881db618468697802c5efab0cd0b);
-        
-        
-            
-            var feature_group_ea34ce11c6ed4a9c98e13aaaeb125420 = L.featureGroup(
-                ).addTo(map_5dbd881db618468697802c5efab0cd0b);
-        
-        
-            
-            var feature_group_8e63fad882684a369f676a8d197385bf = L.featureGroup(
-                ).addTo(map_5dbd881db618468697802c5efab0cd0b);
-        
-        
-            
-                var lat_lng_popup_d5fb05e21a3841da86564e5badcff8b9 = L.popup();
+                var lat_lng_popup_5319abc9d16747b7b063653def08421b = L.popup();
                 function latLngPop(e) {
-                    lat_lng_popup_d5fb05e21a3841da86564e5badcff8b9
+                    lat_lng_popup_5319abc9d16747b7b063653def08421b
                         .setLatLng(e.latlng)
                         .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
                                     "<br>Longitude: " + e.latlng.lng.toFixed(4))
-                        .openOn(map_5dbd881db618468697802c5efab0cd0b);
+                        .openOn(map_457a9b9809f94f91adb41d88ca8a30d3);
                     }
-                map_5dbd881db618468697802c5efab0cd0b.on('click', latLngPop);
+                map_457a9b9809f94f91adb41d88ca8a30d3.on('click', latLngPop);
             
         
             
-            var layer_control_c308a095c8cf496b92bc2b5a2b24d823 = {
-                base_layers : { "openstreetmap" : tile_layer_e128fdb3d4d943e390128c1b142f43c1, },
-                overlays : { "wrf" : feature_group_a8041966ef9b44c3a88dfe75d3b508c3,"swan" : feature_group_47d00b98ab70416a80c7e40768a15648,"roms" : feature_group_ea34ce11c6ed4a9c98e13aaaeb125420,"ww3" : feature_group_8e63fad882684a369f676a8d197385bf, }
+            var layer_control_77d6579887e64ab7975ffaaf2a18925d = {
+                base_layers : { "openstreetmap" : tile_layer_5bea63e2eae04311b301916990e88661, },
+                overlays : { "roms" : feature_group_e1843666637f41d3a24b099d6400a163, }
                 };
             L.control.layers(
-                layer_control_c308a095c8cf496b92bc2b5a2b24d823.base_layers,
-                layer_control_c308a095c8cf496b92bc2b5a2b24d823.overlays
-                ).addTo(map_5dbd881db618468697802c5efab0cd0b);
+                layer_control_77d6579887e64ab7975ffaaf2a18925d.base_layers,
+                layer_control_77d6579887e64ab7975ffaaf2a18925d.overlays
+                ).addTo(map_457a9b9809f94f91adb41d88ca8a30d3);
         
         
         
